@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
+// import { Header } from 'semantic-ui-react';
+import { Header, Button, Icon } from 'react-materialize';
 
 class Home extends Component {
   render() {
     return (
-      <Header as='h1' textAlign='center'>The Tiny Tot Boutique</Header>
+    	<div>
+	      <h1>The Tiny Tot Boutique</h1>
+    		<Button waves='light'>click me. i don't do anything.</Button>
+    	</div>
     );
   }
 }
