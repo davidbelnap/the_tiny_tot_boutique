@@ -9,17 +9,25 @@ class NavBar extends Component {
 
   render() {
     return(
-      <Navbar brand='The Tiny Tot Boutique' right>
+      <Navbar style={styles.navbar} brand='The Tiny Tot Boutique' right>
         <div>
           <NavItem href='/'>HOME</NavItem>
           <NavItem href='/shop'>SHOP</NavItem>
-          <NavItem href='/about'>ABOUT US</NavItem>
           <NavItem href='/contact'>CONTACT US</NavItem>
         </div>
       </Navbar>
     )
   }
 };
+
+const styles = {
+  navbar: {
+    backgroundColor: '#50D0D6',
+    borderBottomWidth: '4px',
+    borderBottomColor: '#F486BC',
+    borderBottomStyle: 'solid', 
+  }
+}
 
 export default (NavBar);
 

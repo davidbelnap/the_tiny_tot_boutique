@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Header } from 'semantic-ui-react';
 import { Header, Button, Icon } from 'react-materialize';
 
 class Home extends Component {
@@ -7,10 +6,16 @@ class Home extends Component {
     return (
     	<div>
 	      <h1>The Tiny Tot Boutique</h1>
-    		<Button waves='light'>click me. i don't do anything.</Button>
+    		<Button style={styles.button} waves='#E281E8'>Click here to start shopping!</Button>
     	</div>
     );
   }
+}
+
+const styles = {
+	button: {
+		backgroundColor: '#D252DB'
+	}
 }
 
 export default Home;
